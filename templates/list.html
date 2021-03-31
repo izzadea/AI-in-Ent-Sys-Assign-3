@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-with, initial-scale-1">
+    <title>Student Information Management</title>
+<br>
+</head>
+<body>
+    <table border="1">
+        <thead>
+            <td>Student ID</td>
+            <td>First Name</td>        
+            <td>Last Name</td>
+            <td>Date of Birth</td>        
+            <td>Amount Due</td>  
+        <thead>
+        
+        {%for rows in rows %} 
+        
+        <tr>
+        <td>{{row['student_id']}}</td>
+        <td>{{row['first_name']}}</td>
+        <td>{{row['last_name']}}</td>
+        <td>{{row['DOB']}}</td>
+        <td>{{row['amount_due']}}</td>
+        </tr>
+        
+        {% endfor %}
+    </table>
+    <a href='/'>Go to homepage</a>
+</body>
+</html>
