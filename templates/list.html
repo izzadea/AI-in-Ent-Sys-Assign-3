@@ -1,9 +1,10 @@
+
 <!DOCTYPE html>
 <html lang="eng">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-with, initial-scale-1">
-    <title>Student Information Management</title>
+    <title>Student Database</title>
 <br>
 </head>
 <body>
@@ -16,7 +17,7 @@
             <td>Amount Due</td>  
         <thead>
         
-        {%for rows in rows %} 
+        {%for row in rows %} 
         
         <tr>
         <td>{{row['student_id']}}</td>
